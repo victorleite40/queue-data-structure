@@ -1,12 +1,9 @@
 package appfila;
 
 public class FilaCircular {
-    private int quantidade;
-	private final int fila[];
-	private int inicio;
-	private int fim;
+    private int quantidade, fila[], inicio, fim;
     
-    public FilaCircular(final int tamanho) {
+    public FilaCircular(int tamanho) {
         fila = new int [tamanho];
         quantidade = 0;
         inicio=0;
@@ -29,7 +26,7 @@ public class FilaCircular {
         return isEmpty() ? -1 : fila[inicio] ;
     }
     
-    public boolean enqueue(final int valor) {
+    public boolean enqueue(int valor) {
         if (!isFull()) {
             fila[fim++]=valor;
             quantidade++;
@@ -43,7 +40,7 @@ public class FilaCircular {
     public int dequeue() {
         if (!isEmpty()) {
             quantidade--;
-            final int temp = fila[inicio++];
+            int temp = fila[inicio++];
             inicio=(inicio+1)%fila.length;
             return temp;
         } else {

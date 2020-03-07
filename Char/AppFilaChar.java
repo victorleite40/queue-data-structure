@@ -2,10 +2,10 @@ package appfilachar;
 
 public class AppFilaChar {
 
-    public static void main(final String[] args) {
+    public static void main(String[] args) {
         
-        final FilaChar fila1 = new FilaChar(10);        
-        final FilaChar fila2 = new FilaChar(10);
+        FilaChar fila1 = new FilaChar(10);        
+        FilaChar fila2 = new FilaChar(10);
 
         
         fila1.enqueue('v');        
@@ -18,8 +18,8 @@ public class AppFilaChar {
         fila1.dequeue();        
         fila2.dequeue();
         
-        System.out.println("Fila 1: " + fila1.printFila());
-        System.out.println("Fila 2: " + fila2.printFila());
+        System.out.println("Fila 1: " + fila1.printFila());            
+        System.out.println("Fila 2: " + fila2.printFila());          
               
         System.out.println("\nPróximo: 1='" + fila1.front() + "' 2='" + fila2.front() + "'");       
         System.out.println("Tamanho: 1=" + fila1.size() + "   2=" + fila2.size());
