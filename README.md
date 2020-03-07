@@ -19,7 +19,7 @@ queue.size() // Returns the number of items in the queue.
 
 #### `.front()`
 ```js
-queue.font() // Returns the front item without removing it from the queue.
+queue.front() // Returns the front item without removing it from the queue.
 ```
 
 #### `.enqueue(item)`
@@ -32,3 +32,5 @@ queue.enqueue('a')
 ```js
 queue.dequeue() // Removes and returns the item which is up for processing.
 ```
+
+##### Thanks for watching!
