@@ -9,7 +9,7 @@ queue.isEmpty() // Returns true if there are no items in the queue, false otherw
 
 #### `.isFull()`
 ```js
-queue.isFull() // Returns true if there are items in the queue, false when the queue is empty.
+queue.isFull() // Returns true if there are items in the queue, false otherwise.
 ```
 
 #### `.size()`
@@ -24,7 +24,7 @@ queue.front() // Returns the front item without removing it from the queue.
 
 #### `.enqueue(item)`
 ```js
-queue.enqueue(1) // Pushes new item to the end of the queue.
+queue.enqueue( 1 ) // Pushes new item to the end of the queue.
 queue.enqueue('a')
 ```
 
