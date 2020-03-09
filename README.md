@@ -9,7 +9,7 @@ queue.isEmpty() // Returns true if there are no items in the queue, false otherw
 
 #### `.isFull()`
 ```js
-queue.isFull() // Returns true if there are items in the queue, false otherwise.
+queue.isFull() // Returns true if the queue is full, false otherwise.
 ```
 
 #### `.size()`
